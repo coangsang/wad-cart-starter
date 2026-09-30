@@ -47,16 +47,20 @@ Expected files:
 Do not modify unrelated files unless required for the project harness.
 
 ### Commands
+
 Before changing implementation, run:
-npm test
+`npm test`
 
 The starter repository is expected to begin with a failing test.
-After every implementation change, use:
-git diff
-npm test
 
-Read and review the complete diff before accepting the change.
-If linting or formatting commands are configured in package.json, run them before considering the task complete.
+After making implementation changes, stop and present the changes for human review.
+
+Do not commit, push, or merge changes unless explicitly instructed.
+
+Before considering the task complete, the following gates must pass:
+
+- `npm test`
+- `npm run lint`
 
 ### Tests
 Tests must verify behaviour from the specification, not implementation details.
