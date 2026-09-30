@@ -47,11 +47,9 @@ cartTotal(
 must return 467400 as a JavaScript number.
 
 ### Edge cases
-- Empty cart returns 0.
-- Empty cart has no VAT and no shipping.
-- Negative price throws RangeError.
-- qty must be a positive integer.
-- Zero, negative, or non-integer qty throws RangeError.
+- An empty cart returns `0` with no VAT or shipping.
+- A negative `price` throws `RangeError`.
+- A `qty` that is zero, negative, or non-integer throws `RangeError`.
 
 ### Constraints
 - Plain JavaScript only.
